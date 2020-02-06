@@ -69,7 +69,7 @@ ul li.active a{
 	float:left;
 	width:120px;
 	height:auto;
-	transition: 1s;
+  transition: 1s;
 }
 .main{
   max-width: 1200px;
