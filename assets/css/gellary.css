@@ -1,0 +1,24 @@
+ul{
+    float:right;
+    list-style-type:none;
+    margin:25px;
+  }
+  ul li{
+    display:inline-block;
+  }
+  ul li a{
+      text-decoration:none;
+      color:#f032e6;
+      padding:5px 20px;
+    border:2px solid transparent;
+    transition: 0.6s ease-in-out;
+  }
+  ul li a:hover{
+      background-color: lightblue;
+      color: black;
+      text-decoration: none;
+  }
+  ul li.active a{
+      background-color:lightblue;
+      color: black;
+  }
