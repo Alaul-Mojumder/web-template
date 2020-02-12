@@ -13,6 +13,14 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
+<style type="text/css">
+    .gallery-section{
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+</style>
+
 <body>
     <ul class="nav">
         <li><a href="index.html">Home</a></li>  
@@ -22,17 +30,38 @@
 
      <div class="gallery-section">
          <div class="inner-width">
-             <h1></h1>
+             <h1>My Gallery</h1>
              <div class="border"></div>
              <div class="gallery">
                  
-                 <a href="img/9.png" class="image">
-                    <img src="img/9.png" alt="">
+                 <a href="assets/images/9.jpg" class="image img img-fluid">
+                    <img src="assets/images/9.jpg" alt="NO Photos founded">
+                </a>
+                 <a href="assets/images/10.jpg" class="image img img-fluid"> 
+                    <img src="assets/images/10.jpg" alt="NO Photos founded">
+                </a>
+                 <a href="assets/images/11.jpg" class="image">
+                    <img src="assets/images/11.jpg" alt="NO Photos founded">
+                </a>
+                 <a href="assets/images/12.jpg" class="image">
+                    <img src="assets/images/12.jpg" alt="NO Photos founded">
+                </a>
+                 <a href="assets/images/4.jpg" class="image">
+                    <img src="assets/images/4.jpg" alt="NO Photos founded">
                 </a>
              </div>
 
          </div>
      </div>
+     <script>
+         $(".gallery").magnificPopup({
+             delegate:'a',
+             type:'image'
+             gallery:{
+                 enabled:true;
+             }
+         });
+     </script>
 </body>
 <!--Bootstrap for Javascript--> 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
